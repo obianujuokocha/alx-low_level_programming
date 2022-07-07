@@ -1,0 +1,14 @@
+int _putchar(char c);
+8 void print_alphabet(void);
+9 void print_alphabet_x10(void);
+10 int _islower(int c);
+11 int _isalpha(int c);
+12 int print_sign(int n);
+13 int _abs(int r);
+14 int print_last_digit(int n);
+15 void jack_bauer(void);
+16 void times_table(void);
+17 int add(int a, int b);
+18 void print_to_98(int n);
+19 void print_times_table(int n);
+20 void putforest(int);
