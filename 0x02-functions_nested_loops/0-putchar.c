@@ -5,6 +5,7 @@
  *
  * Return: 0 (Success)
  */
+
 int main(void)
 {
 	int i = 0;
@@ -12,7 +13,7 @@ int main(void)
 
 	while (text[i] != '\0')
 	{
-		)putchar(text[i]);
+		_putchar(text[i]);
 		i++;
 	}
 	_putchar('\n');
