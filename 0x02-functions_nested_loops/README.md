@@ -1,1 +1,1 @@
-THIS IS ONE README FOR C FUNCTION AND NESTED LOOPS
+## Functions, nested loops
