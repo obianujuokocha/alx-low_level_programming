@@ -3,7 +3,7 @@
  * swap_int - A function that swaps the value of to integers
  * @a: first character
  * @b: second character
- * 
+ *
  */
 
 void swap_int(int *a, int *b)
