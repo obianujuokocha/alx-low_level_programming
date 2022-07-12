@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * strlen -> A function that returns the length of a string
+ * _strlen -> A function that returns the length of a string
  *
  * @s: character hose len is to be checked
  *
