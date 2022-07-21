@@ -1,34 +1,39 @@
 #include "main.h"
-int is_divisible(int num, int div);
-
 /**
- * is_prime_number - A function that checks if a number is prime
- * @n: an input integer
- * Return: 1 if n is prime or 0 in otherise
- */
+ * sqtRecursive - computes square root recursively
+ * @n: given number
+ * @m: comparison number
+ * Return: 1 if not found sqrroot, else sqrroot
+ **/
+int sqtRecursive(int n, int m)
+{
+	if (n <= 0)
+		return (-1);
+	if (n * n == m)
+		return (n);
+	return (sqtRecursive(n - 1, m));
+}
+/**
+ * _sqrt_recursion - finds the natural square root of a number
+ * @n: given number
+ * Return: square root of n or -1
+ **/
+int _sqrt_recursion(int n)
+{
+	if (n == 1)
+		return (1);
+	return (sqtRecursive(n / 2, n));
+}
+/**
+ * is_prime_number - checks if a given number is prime
+ * @n: given number
+ * Return: 1 if number is prime else 0
+ **/
 int is_prime_number(int n)
 {
-	int div = 2;
-
-	if (n <= 3)
-		return (1);
-
-	return (is_divisible(n, div));
-}
-
-/**
- * is_divisible - check if num is divisible
- * @num: the number to be checked
- * @div: the result of division
- * Return: 1 if num is divisible or 0 if numis not divisible
- */
-int is_divisible(int num, int div)
-{
-	if (num % div == 0)
+	if (n <= 1 || _sqrt_recursion(n) >= 1)
 		return (0);
-
-			if (div == num / 2)
-				return (1);
-
-	return (is_divisible(num, div + 1));
+	if (_sqrt_recursion(n) == -1)
+		return (1);
+	return (_sqrt_recursion(n));
 }
