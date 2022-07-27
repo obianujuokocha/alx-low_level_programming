@@ -7,7 +7,7 @@
  * @size:the size of the character to be operated on
  * @c: the type
  * Return: if size == 0 or the function fails - NULL
- * otherwise - a pointerto the array.
+ * otherwise - a pointr to the array.
  */
 
 char *create_array(unsigned int size, char c)
